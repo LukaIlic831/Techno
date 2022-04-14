@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Techno</title>
+</head>
+
+<body>
+    <section id="navigation">
+            <div class="row">
+                <nav>
+                    <figure class="logo__image--wrapper">
+                        <img src="./assets/nav-logo.png" class="logo__image">
+                    </figure>
+                    <ul class="nav__list">
+                        <li><a class="nav__link" href="">Home</a>
+                            <ul class="nav__sub-menu">
+                                <li><a href="">Home One</a></li>
+                                <li><a href="">Home One</a></li>
+                                <li><a href="">Home One</a></li>
+                                <li><a href="">Home One</a></li>
+                            </ul>
+                        </li>
+                        <li><a class="nav__link" href="">Services</a>
+                            <ul class="nav__sub-menu">
+                                <li><a href="">Services One</a></li>
+                                <li><a href="">Services One</a></li>
+                                <li><a href="">Services One</a></li>
+                                <li><a href="">Services One</a></li>
+                            </ul></li>
+                        <li><a class="nav__link" href="">Blog</a>
+                            <ul class="nav__sub-menu">
+                                <li><a href="">Blog One</a></li>
+                                <li><a href="">Blog One</a></li>
+                                <li><a href="">Blog One</a></li>
+                                <li><a href="">Blog One</a></li>
+                            </ul></li>
+                        <li><a class="nav__link" href="">Contact</a></li>
+                        <li><a class="nav__link" href="">Company</a></li>
+                        <li><a class="nav__link nav__link--primary" href="">Get A Quote</a></li>
+                    </ul>
+                    <button class="btn__menu" onclick="openMenu()">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                    <div class="menu__backdrop">
+                        <button class="btn__menu btn__menu--close" onclick="closeMenu()">
+                            <i class="fas fa-times"></i>
+                        </button>
+                        <ul class="menu__links">
+                            <li class="menu__list">
+                                <a class="menu__link" onclick="openHomeSubMenu()">Home</a>
+                            </li>
+                            <li class="menu__list">
+                                <a class="menu__link" onclick="openServiceSubMenu()">Services</a>
+                            </li>
+                            <li class="menu__list">
+                                <a class="menu__link" onclick="openBlogSubMenu()">Blog</a>
+                            </li>
+                            <li class="menu__list">
+                                <a class="menu__link" onclick="closeMenu()">Contact</a>
+                            </li>
+                            <li class="menu__list">
+                                <a class="menu__link" onclick="closeMenu()">Company</a>
+                            </li>
+                            <li class="menu__list">
+                                <a class="menu__link--primary nav__link--primary" onclick="closeMenu()">Get A Quote</a>
+                            </li>
+                        </ul>
+                        <ul class="sub-menu home-menu">
+                            <li onclick="closeSubMenu()"><i class="fas fa-angle-left"></i></li>
+                            <li>Home One</li>
+                            <li>Home One</li>
+                            <li>Home One</li>
+                        </ul>
+                        <ul class="sub-menu service-menu">
+                            <li onclick="closeSubMenu()"><i class="fas fa-angle-left"></i></li>
+                            <li>Services One</li>
+                            <li>Services One</li>
+                            <li>Services One</li>
+                        </ul>
+                        <ul class="sub-menu blog-menu">
+                            <li onclick="closeSubMenu()"><i class="fas fa-angle-left"></i></li>
+                            <li>Blog One</li>
+                            <li>Blog One</li>
+                            <li>Blog One</li>
+                        </ul>
+                      </div>
+                </nav>
+                <header>
+                        <div class="description">
+                            <div class="description__wrapper">
+                                <div class="description__text">
+                                    <h1 class="description__text--title">Secure IT Solutions <br />
+                                        For a More Secure</h1>
+                                    <div class="description__text--para">
+                                        Aliquam sed diam faucibus, lacinia dui consequat, blandit metus. Sed vel augue felis.
+                                        Cras
+                                        vel faucibus mauris. Aenean fermentum eleifend turpis. Cras malesuada placerat risus.
+                                        Vestibulum nisi velit.
+                                    </div>
+                                    <div class="description__buttons">
+                                        <a>How IT Work
+                                            
+                                        </a>
+                                        <a>About Us
+                                            
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                </header>
+        </div>
+    </section>
+    <a class="back__btn" href="#navigation">
+        <i class="fas fa-angle-left back__icon"></i>
+    </a>
+    <main>
+        <section id="services">
+            <div class="row">
+                <div class="services__wrap">
+                    <div class="service">
+                        <i class="fas fa-video service__icon"></i>
+                        <h4 class="service__title">Network Services</h4>
+                        <div class="service__para">
+                            <p>Donec pellentesque turpis utium lorem imperdiet semper viverra.</p>
+                        </div>
+                    </div>
+                    <div class="service">
+                        <i class="fas fa-server service__icon"></i>
+                        <h4 class="service__title">Disaster Recovery</h4>
+                        <div class="service__para">
+                            <p>Donec pellentesque turpis utium lorem imperdiet semper viverra.</p>
+                        </div>
+                    </div>
+                    <div class="service">
+                        <i class="fas fa-cloud service__icon"></i>
+                        <h4 class="service__title">Cloud Solutions</h4>
+                        <div class="service__para">
+                            <p>Donec pellentesque turpis utium lorem imperdiet semper viverra.</p>
+                        </div>
+                    </div>
+                    <div class="service">
+                        <i class="fas fa-desktop service__icon"></i>
+                        <h4 class="service__title">Solution Company</h4>
+                        <div class="service__para">
+                            <p>Donec pellentesque turpis utium lorem imperdiet semper viverra.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="cloud-services">
+            <div class="row">
+                <div class="cloud__service--wrap">
+                    <div class="cloud__service">
+                        <div class="cloud__title">
+                            Cloud Services
+                        </div>
+                        <div class="cloud__bar">
+                            <div class="cloud__bar--bg">
+                            </div>
+                        </div>
+                        <div class="cloud__para">
+                            Cloud Services Phasellus vitae velit sit amet diam semper commodo quis quis libero. Morbi
+                            consequat arcu augue, molestie faucibus metus ullamcorper vel apple is the best theme.
+                        </div>
+                        <div class="cloud__icons--wrap">
+                            <div class="cloud__icon-wrap">
+                                <div class="cloud__icon">
+                                    <div class="cloud--icon">
+                                        <i class="fas fa-database icon"></i>
+                                    </div>
+                                    <p>Cloud Databases</p>
+                                </div>
+                            </div>
+                            <div class="cloud__icon-wrap">
+                                <div class="cloud__icon">
+                                    <div class="cloud--icon">
+                                        <i class="fas fa-database icon"></i>
+                                    </div>
+                                    <p>Cloud Databases</p>
+                                </div>
+                            </div>
+                            <div class="cloud__icon-wrap">
+                                <div class="cloud__icon">
+                                    <div class="cloud--icon">
+                                        <i class="fas fa-database icon"></i>
+                                    </div>
+                                    <p>Cloud Databases</p>
+                                </div>
+                            </div>
+                            <div class="cloud__icon-wrap">
+                                <div class="cloud__icon">
+                                    <div class="cloud--icon">
+                                        <i class="fas fa-database icon"></i>
+                                    </div>
+                                    <p>Cloud Databases</p>
+                                </div>
+                            </div>
+                            <div class="cloud__icon-wrap">
+                                <div class="cloud__icon">
+                                    <div class="cloud--icon">
+                                        <i class="fas fa-database icon"></i>
+                                    </div>
+                                    <p>Cloud Databases</p>
+                                </div>
+                            </div>
+                            <div class="cloud__icon-wrap">
+                                <div class="cloud__icon">
+                                    <div class="cloud--icon">
+                                        <i class="fas fa-database icon"></i>
+                                    </div>
+                                    <p>Cloud Databases</p>
+                                </div>
+                            </div>
+                            <div class="cloud__icon-wrap">
+                                <div class="cloud__icon">
+                                    <div class="cloud--icon">
+                                        <i class="fas fa-database icon"></i>
+                                    </div>
+                                    <p>Cloud Databases</p>
+                                </div>
+                            </div>
+                            <div class="cloud__icon-wrap">
+                                <div class="cloud__icon">
+                                    <div class="cloud--icon">
+                                        <i class="fas fa-database icon"></i>
+                                    </div>
+                                    <p>Cloud Databases</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cloud__service--img">
+                        <figure class="cloud__service--img-wrapper">
+                            <img class="cloud__service--img" src="./assets/service2.png" alt="">
+                            <div class="cloud__service--rotate-animation">
+                                <img class="cloud__service--rotate" src="./assets/service-rot.png" alt="">
+                            </div>
+                        </figure>
+                    </div>
+                </div>
+                <div class="cloud__service--wrap media-wrap">
+                    <div class="cloud__service--img">
+                        <figure class="cloud__service--img-wrapper2">
+                            <img src="./assets/service3.png" alt="">
+                            <div class="cloud__service--rotate-animation2">
+                                <img class="cloud__service--rotate2" src="./assets/service-rot.png" alt="">
+                            </div>
+                        </figure>
+                    </div>
+                    <div class="cloud__service">
+                        <div class="cloud__title">
+                            Cloud Services
+                        </div>
+                        <div class="cloud__bar">
+                            <div class="cloud__bar--bg">
+                            </div>
+                        </div>
+                        <div class="cloud__para">
+                            Cloud Services Phasellus vitae velit sit amet diam semper commodo quis quis libero. Morbi
+                            consequat arcu augue, molestie faucibus metus ullamcorper vel apple is the best theme.
+                        </div>
+                        <div class="cloud__icons--wrap">
+                            <div class="cloud__icon-wrap">
+                                <div class="cloud__icon">
+                                    <div class="cloud--icon">
+                                        <i class="fas fa-database icon"></i>
+                                    </div>
+                                    <p>Cloud Databases</p>
+                                </div>
+                            </div>
+                            <div class="cloud__icon-wrap">
+                                <div class="cloud__icon">
+                                    <div class="cloud--icon">
+                                        <i class="fas fa-database icon"></i>
+                                    </div>
+                                    <p>Cloud Databases</p>
+                                </div>
+                            </div>
+                            <div class="cloud__icon-wrap">
+                                <div class="cloud__icon">
+                                    <div class="cloud--icon">
+                                        <i class="fas fa-database icon"></i>
+                                    </div>
+                                    <p>Cloud Databases</p>
+                                </div>
+                            </div>
+                            <div class="cloud__icon-wrap">
+                                <div class="cloud__icon">
+                                    <div class="cloud--icon">
+                                        <i class="fas fa-database icon"></i>
+                                    </div>
+                                    <p>Cloud Databases</p>
+                                </div>
+                            </div>
+                            <div class="cloud__icon-wrap">
+                                <div class="cloud__icon">
+                                    <div class="cloud--icon">
+                                        <i class="fas fa-database icon"></i>
+                                    </div>
+                                    <p>Cloud Databases</p>
+                                </div>
+                            </div>
+                            <div class="cloud__icon-wrap">
+                                <div class="cloud__icon">
+                                    <div class="cloud--icon">
+                                        <i class="fas fa-database icon"></i>
+                                    </div>
+                                    <p>Cloud Databases</p>
+                                </div>
+                            </div>
+                            <div class="cloud__icon-wrap">
+                                <div class="cloud__icon">
+                                    <div class="cloud--icon">
+                                        <i class="fas fa-database icon"></i>
+                                    </div>
+                                    <p>Cloud Databases</p>
+                                </div>
+                            </div>
+                            <div class="cloud__icon-wrap">
+                                <div class="cloud__icon">
+                                    <div class="cloud--icon">
+                                        <i class="fas fa-database icon"></i>
+                                    </div>
+                                    <p>Cloud Databases</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="numbers">
+            <div class="row">
+                <div class="numbers__wrapper">
+                    <div class="number">
+                        <div class="number__counter">
+                            <div class="counter__wrap">
+                                <h1 class="h1-number counter">15</h1>
+                                <h1 class="h1-number">&nbsp;K</h1>
+                            </div>
+                            <h5 class="h5-number">Happy Clients</h5>
+                        </div>
+                    </div>
+                    <div class="number">
+                        <div class="number__counter">
+                            <div class="counter__wrap">
+                                <h1 class="h1-number counter">1280</h1>
+                                <h1 class="h1-number">&nbsp;+</h1>
+                            </div>
+                            <h5 class="h5-number">Account Number</h5>
+                        </div>
+                    </div>
+                    <div class="number">
+                        <div class="number__counter">
+                            <div class="counter__wrap">
+                                <h1 class="h1-number counter">10</h1>
+                                <h1 class="h1-number">&nbsp;K</h1>
+                            </div>
+                            <h5 class="h5-number">Finished Projects</h5>
+                        </div>
+                    </div>
+                    <div class="number">
+                        <div class="number__counter">
+                            <div class="counter__wrap">
+                                <h1 class="h1-number counter">992</h1>
+                                <h1 class="h1-number">&nbsp;+</h1>
+                            </div>
+                            <h5 class="h5-number">Win Awards</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="team-members">
+            <div class="row">
+                <div class="section--wrapper">
+                    <h6 class="section--title">TEAM MEMBER</h6>
+                    <div class="section--para">
+                        <h1>Our Awesome Creative</h1>
+                        <h1>Team Member</h1>
+                    </div>
+                </div>
+                <div class="member__wrapper">
+                    <div class="member">
+                        <figure class="member__img--wrap">
+                            <img src="./assets/member.jpg" alt="">
+                        </figure>
+                    </div>
+                    <div class="member">
+                        <figure class="member__img--wrap">
+                            <img src="./assets/member1.jpg" alt="">
+                        </figure>
+                    </div>
+                    <div class="member">
+                        <figure class="member__img--wrap">
+                            <img src="./assets/member2.jpg" alt="">
+                        </figure>
+                    </div>
+                    <div class="member">
+                        <figure class="member__img--wrap">
+                            <img src="./assets/member3.jpg" alt="">
+                        </figure>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="plans">
+            <div class="row">
+                <div class="section--wrapper margin">
+                    <h6 class="section--title">PRICING AND PLAN</h6>
+                    <div class="section--para">
+                        <h1>Choose Your Best Plan</h1>
+                    </div>
+                </div>
+                <div class="plans__wrapper">
+                    <div class="plan">
+                        <div class="plan__content">
+                            <h3>Basic Plan</h3>
+                            <ul class="plan__features">
+                                <li class="features">30 Days Trial Features</li>
+                                <li class="features">Synced To Cloud Database</li>
+                                <li class="features">10 Hours Of Support</li>
+                                <li class="features">Social Media Integration</li>
+                                <li class="features">Unlimited Features</li>
+                            </ul>
+                            <div class="plan__price">
+                                <h2>$49.99</h2> <span> / month</span>
+                            </div>
+                            <div class="pricing__button">
+                                <a href="#">Choose Plan</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="plan active">
+                        <div class="plan__content">
+                            <h3>Premium Plan</h3>
+                            <ul class="plan__features active">
+                                <li class="features">30 Days Trial Features</li>
+                                <li class="features">Synced To Cloud Database</li>
+                                <li class="features">10 Hours Of Support</li>
+                                <li class="features">Social Media Integration</li>
+                                <li class="features">Unlimited Features</li>
+                            </ul>
+                            <div class="plan__price">
+                                <h2>$99.77</h2> <span> / month</span>
+                            </div>
+                            <div class="pricing__button">
+                                <a href="#" class="active-button">Choose Plan</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="plan">
+                        <div class="plan__content">
+                            <h3>Ultra Plan</h3>
+                            <ul class="plan__features">
+                                <li class="features">30 Days Trial Features</li>
+                                <li class="features">Synced To Cloud Database</li>
+                                <li class="features">10 Hours Of Support</li>
+                                <li class="features">Social Media Integration</li>
+                                <li class="features">Unlimited Features</li>
+                            </ul>
+                            <div class="plan__price">
+                                <h2>$89.49</h2> <span> / month</span>
+                            </div>
+                            <div class="pricing__button">
+                                <a href="#">Choose Plan</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="contact">
+            <div class="map__wrapper">
+            <iframe class="map" src="https://snazzymaps.com/embed/65241" frameborder="0"></iframe>
+            </div>
+            <div class="row contact-over">
+                <div class="contact__section">
+                <div class="contact__section--title">
+                    <h1>Contact Us</h1>
+                </div>
+                <form class="contact__form">
+                    <div class="contact__form--row">
+                        <div class="form__box">
+                            <input type="text" placeholder="Name">
+                        </div>
+                        <div class="form__box">
+                            <input type="email" placeholder="Email Address">
+                        </div>
+                        <div class="form__box">
+                            <input type="tel" placeholder="Phone Number">
+                        </div>
+                        <div class="form__box">
+                            <input type="text" placeholder="Website">
+                        </div>
+                    </div>
+                    <div class="contact__textarea">
+                        <textarea name="message" id="message" cols="30" rows="10" placeholder="Write a Message"></textarea>
+                    </div>
+                    <div class="contact__button">
+                        <button class="c-btn">Send Message</button>
+                    </div>
+                </form>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="row">
+            <div class="footer__section--wrapper">
+                <div class="footer__section">
+                    <figure class="footer__image--wrapper">
+                        <img class="footer__image" src="./assets/nav-logo.png" alt="">
+                    </figure>
+                    <div class="footer__para">
+                        Condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam
+                        nunc, blandit vel, luctus.
+                    </div>
+                    <div class="footer__social--links">
+                        <p>Follow Us</p>
+                        <div class="footer__social--icons">
+                            <a href="#"><i class="fab fa-facebook"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                            <a href="#"><i class="fab fa-skype"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer__section">
+                    <div class="footer__services">
+                        <div class="footer__services--title">
+                            <h4>Our Services</h4>
+                        </div>
+                        <ul class="service__list">
+                            <li><a href="">Marketing Strategy</a></li>
+                            <li><a href="">Interior Design</a></li>
+                            <li><a href="">Digital Services</a></li>
+                            <li><a href="">Product Selling</a></li>
+                            <li><a href="">Product Design</a></li>
+                            <li><a href="">Social Marketing</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer__section">
+                    <div class="footer__services--title">
+                        <h4>Company Address</h4>
+                    </div>
+                    <div class="footer__para">
+                        Porem awesome dolor sitework amet, consetur acing elit, sed do eiusmod ligal
+                    </div>
+                    <div class="footer__address footer-info">
+                        <p><span class="address info">Address: </span>
+                            54/1 New dhas sorini Asut, Melbord Austria.
+                        </p>
+                    </div>
+                    <div class="footer__phone footer-info">
+                        <p><span class="phone info">Phone: </span>
+                            54786547521
+                        </p>
+                    </div>
+                    <div class="footer__email footer-info">
+                        <p><span class="email info">Email: </span>
+                            demo@example.com
+                        </p>
+                    </div>
+                </div>
+                <div class="footer__section">
+                    <div class="footer__services--title">
+                        <h4>Company Address</h4>
+                    </div>
+                    <div class="footer__para">
+                        Porem awesome dolor sitework amet, consetur acing elit, sed do eiusmod ligal
+                    </div>
+                    <div class="footer__address footer-info">
+                        <p><span class="address info">Address: </span>
+                            54/1 New dhas sorini Asut, Melbord Austria.
+                        </p>
+                    </div>
+                    <div class="footer__phone footer-info">
+                        <p><span class="phone info">Phone: </span>
+                            54786547521
+                        </p>
+                    </div>
+                    <div class="footer__email footer-info">
+                        <p><span class="email info">Email: </span>
+                            demo@example.com
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__copyright">
+                <div class="copyright__para">
+                    &copy; 2020 Techno.All Rights Reserved. 
+                </div>
+                <div class="footer__policy--terms">
+                    <a href="#" class="privacy-policy">Privacy Policy</a>
+                    <a href="#">Terms & Conditions</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $(".counter").counterUp({
+                delay: 10,
+                time: 1000
+            })
+        })
+    </script>
+     <script src="index.js"></script>
+</body>
+</html>
